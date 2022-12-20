@@ -1,15 +1,28 @@
 html, body {
   height: 100%;
   width: 100%;
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Chivo Mono', monospace;
+  color: #ebf0ee;
+  background-color: #223A40;;
 }
 
+/* Color Theme Swatches in Hex */
+.Tropical-green-leaf-background,-Dark-tone-theme.-1-hex { color: #223A40; }
+.Tropical-green-leaf-background,-Dark-tone-theme.-2-hex { color: #070C0D; }
+.Tropical-green-leaf-background,-Dark-tone-theme.-3-hex { color: #172326; }
+.Tropical-green-leaf-background,-Dark-tone-theme.-4-hex { color: #3F5559; }
+.Tropical-green-leaf-background,-Dark-tone-theme.-5-hex { color: #7B8C86; }
+
+
+
 .header {
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Chivo Mono', monospace;
   display: flex;
   justify-content: space-around;
   color: #0f65ef;
   font-size:27px;
+  background: rgb(23,35,38);
+background: radial-gradient(circle, rgba(23,35,38,1) 0%, rgba(24,38,41,1) 25%, rgba(26,42,46,1) 50%, rgba(28,46,51,1) 75%, rgba(33,57,64,1) 100%);
 }
 
 .logo {
@@ -26,7 +39,9 @@ a {
 }
 
 .coverPhoto {
-  width: 100%;
+  width: 75%;
+  height: auto;
+  border: dashed 2px #3F5559;
 }
 
 .displayResult{
@@ -35,15 +50,62 @@ a {
 
 img{
   width: 100%;
+  
 }
 
-button {
-  margin-top: 10px;
-  color: white;
-  background-color: #eb2642;
+.submit-btn {
+  margin: auto;
+  margin-top: 20px;
+  color: #ebf0ee;
+  background-color: #3F5559;
   font-size: 40px;
   border-radius: 25px;
   border:3px groove black;
-  font-family: monospace;
+  font-family: 'Chivo Mono', monospace;
   padding: 20px;
+  max-width: 50%;
+}
+
+.question-wrapper {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 75%;
+  margin: auto;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.question > input {
+  max-width: 50%;
+  height: auto;
+  margin: auto;
+}
+
+
+.display-result {
+  display: flex;
+  flex-direction: column;
+  width: 850px;
+  margin: auto;
+  border: 2px dashed #3F5559;
+}
+
+.result-text {
+  font-size: 32px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.result-img {
+  width: 800px;
+  height: auto;
+  margin: auto;
 }

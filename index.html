@@ -7,6 +7,7 @@
   <title>BuzzFeed Character Quiz</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -27,26 +28,37 @@
     <h1> What type of animal are you? </h1>
 
     <!-- task 2: update the cover photo for your quiz -->
-    <img class="coverPhoto" src="https://media.sproutsocial.com/uploads/2018/04/Facebook-Cover-Photo-Size.png">
+    <img class="coverPhoto" src="https://www.quizexpo.com/wp-content/uploads/2020/09/cover-6-850x491.jpg">
   </div>
 
   <!-- task 3: Update the questions for your quiz. Be sure to have AT LEAST three to ask the user. Add more questions if you want!-->
-  <div class="questions">
+  <div class="question-wrapper">
+    <div class="question">
     <h3> 1. When are you most active (morning, afternoon, evening, night)? </h3>
-    <input class="q1">
-    </br>
-    <h3> 2. Choose a food: </h3>
-    <input class="q2">
-    </br>
-    <h3> 3. Choose a sport: </h3>
-    <input class="q3">
-    <h3> 4. What is your favorite kind of train? </h3>
-    <input class="q4">
+    <input class="q1" placeholder="Type here...">
+    </div>
+
+    <div class="question">
+    <h3> 2. Choose a food (salad, sushi, chicken salad, pizza): </h3>
+    <input class="q2" placeholder="Type here...">
+    </div>
+
+    <div class="question">
+    <h3> 3. Choose a sport (track and field, football, soccer, tennis): </h3>
+    <input class="q3" placeholder="Type here...">
+    </div>
+
+    <div class="question">
+    <h3> 4. What is your favorite kind of train (freight, bullet light rail, none)? </h3>
+    <input class="q4" placeholder="Type here...">
+    </div>
+      
+    <button class="submit-btn" onclick="getQuizResult()"> Submit!</button>
   </div>
   </br>
 
-  <div class="displayResult">
-    <button class="submit"> Submit!</button>
+  <div class="display-result">
+    
   </div>
   </br>
 <script src="script.js"></script>
